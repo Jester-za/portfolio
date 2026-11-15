@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffrey Kissi - Portfolio Systeem- en Netwerkbeheer</title>
+    <meta name="description" content="Portfolio van Jeffrey Kissi, student systeem- en netwerkbeheer aan AP Hogeschool met een passie voor tech, netwerken en game-design.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:rounded-lg focus:bg-[#00C8C8] focus:px-4 focus:py-2 focus:font-bold focus:text-[#0A1428] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+        Ga naar de inhoud
+    </a>
+    
+    <div class="max-w-6xl mx-auto px-4">
+
+        <header class="flex flex-wrap items-center justify-between py-6 border-b border-[#00C8C8]/30">
+            <a href="index.html" class="rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">
+                <img src="images/logo.png" alt="Logo van Jeffrey Kissi" width="200" height="100" class="h-14 w-auto object-contain">
+            </a>
+            
+            <input type="checkbox" id="menu-knop" class="peer sr-only">
+            <label for="menu-knop" class="cursor-pointer border border-[#00C8C8] px-3 py-2 text-[#00C8C8] peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[#00C8C8] md:hidden">
+                Menu
+            </label>
+
+            <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto mt-4 md:mt-0">
+                <ul class="flex flex-col md:flex-row md:gap-2 font-semibold">
+                    <li>
+                        <a href="index.html" aria-current="page" class="block px-3 py-2 rounded-md bg-[#00C8C8]/20 text-[#00C8C8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">Home</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="block px-3 py-2 rounded-md hover:bg-gray-800 hover:text-[#00C8C8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="project.html" class="block px-3 py-2 rounded-md hover:bg-gray-800 hover:text-[#00C8C8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">Project</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="block px-3 py-2 rounded-md hover:bg-gray-800 hover:text-[#00C8C8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-10">
+            
+            <main id="inhoud" class="md:col-span-2 bg-gray-800/40 p-8 border-l-4 border-[#00C8C8]">
+                <div class="bg-[url(../images/sfeerbeeld3.jpg)] bg-cover bg-center bg-gray-700 bg-blend-multiply px-6 py-16 mb-6 text-center border border-[#00C8C8]/30 rounded-lg">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-[#00C8C8] mb-2">Esports &amp; Game Design</p>
+                    <h1 class="text-4xl font-bold tracking-tight text-white">Jeffrey Kissi</h1>
+                </div>
+
+                <p class="text-gray-300 leading-relaxed mb-4">
+                    Hallo, ik ben Jeffrey Kissi. Ik ben een creatieve maker met een enorme passie voor technologie, e-sports en game-design. Welkom op mijn portfolio! Hier verzamel ik mijn beste projecten, van strakke interfaces tot sfeervolle ontwerpen.
+                </p>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    Mijn visuele stijl is direct afgeleid van moderne RPG's, futuristische tech en competitieve gaming: dark mode esthetiek, scherpe geometrische vormen en krachtige neon-contrasten.
+                </p>
+
+                <a href="portfolio.html" class="inline-flex items-center gap-2 bg-[#FF4655] hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">
+                    Bekijk Portfolio
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </main>
+
+            <aside class="bg-gray-800/40 p-8 border border-gray-700">
+                <div class="flex items-center gap-4 mb-6">
+                    <img src="images/prof-foto.jpeg" alt="Portretfoto van Jeffrey Kissi" width="800" height="1066" class="size-16 rounded-full object-cover border border-[#00C8C8]">
+                    <div>
+                        <h2 class="font-bold text-xl text-[#00C8C8]">Korte info</h2>
+                        <p class="text-xs text-gray-400">AP Hogeschool Antwerpen</p>
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                    Of het nu gaat om het bouwen van een minimalistisch logo, dark fantasy landschappen of een strakke website; ik streef altijd naar een resultaat dat dynamisch en cinematic aanvoelt.
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://facebook.com" class="inline-flex items-center justify-center size-10 bg-[#00C8C8]/20 text-[#00C8C8] hover:bg-[#00C8C8] hover:text-[#0A1428] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+                        <span class="sr-only">Volg mij online</span>
+                    </a>
+                    <a href="https://instagram.com" class="inline-flex items-center justify-center size-10 bg-[#00C8C8]/20 text-[#00C8C8] hover:bg-[#00C8C8] hover:text-[#0A1428] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        <span class="sr-only">Stuur een bericht</span>
+                    </a>
+                    <a href="https://youtube.com" class="inline-flex items-center justify-center size-10 bg-[#00C8C8]/20 text-[#00C8C8] hover:bg-[#00C8C8] hover:text-[#0A1428] rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                        <span class="sr-only">Externe links</span>
+                    </a>
+                </div>
+            </aside>
+            
+        </div>
+
+        <footer class="border-t border-[#00C8C8]/30 py-6 text-center text-sm text-gray-500">
+            <p>&copy; 2026 Jeffrey Kissi | jeffrey.kissi@student.ap.be</p>
+        </footer>
+
+    </div>
+</body>
+</html>

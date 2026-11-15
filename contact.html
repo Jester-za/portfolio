@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Neem contact op met Jeffrey Kissi</title>
+    <meta name="description" content="Stuur Jeffrey Kissi een bericht voor vragen over een stageplaats, een netwerkproject of een creatieve samenwerking.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#inhoud" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:rounded-lg focus:bg-[#00C8C8] focus:px-4 focus:py-2 focus:font-bold focus:text-[#0A1428] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+        Ga naar de inhoud
+    </a>
+    
+    <div class="max-w-6xl mx-auto px-4">
+        
+        <header class="flex flex-wrap items-center justify-between py-6 border-b border-[#00C8C8]/30">
+            <a href="index.html" class="rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">
+                <img src="images/logo.png" alt="Logo van Jeffrey Kissi" width="200" height="100" class="h-14 w-auto object-contain">
+            </a>
+            
+            <input type="checkbox" id="menu-knop" class="peer sr-only">
+            <label for="menu-knop" class="cursor-pointer border border-[#00C8C8] px-3 py-2 text-[#00C8C8] peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-[#00C8C8] md:hidden">
+                Menu
+            </label>
+
+            <nav aria-label="Hoofdmenu" class="hidden w-full peer-checked:block md:block md:w-auto mt-4 md:mt-0">
+                <ul class="flex flex-col md:flex-row md:gap-2 font-semibold">
+                    <li>
+                        <a href="index.html" class="block px-3 py-2 rounded-md hover:bg-gray-800 hover:text-[#00C8C8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">Home</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="block px-3 py-2 rounded-md hover:bg-gray-800 hover:text-[#00C8C8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="project.html" class="block px-3 py-2 rounded-md hover:bg-gray-800 hover:text-[#00C8C8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">Project</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" aria-current="page" class="block px-3 py-2 rounded-md bg-[#00C8C8]/20 text-[#00C8C8] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-10">
+            
+            <main id="inhoud" class="md:col-span-2 bg-gray-800/40 p-8 border-t-4 border-[#FF4655] rounded-lg">
+                <h1 class="text-3xl font-bold tracking-tight mb-2">Stuur een bericht</h1>
+                <p class="mb-6 text-gray-300">
+                    Heb je een vraag over een project of samenwerking? Velden met een <span class="font-semibold text-[#FF4655]">*</span> zijn verplicht.
+                </p>
+                
+                <form name="contact" method="POST" data-netlify="true" class="grid gap-6 md:grid-cols-2">
+                    <div>
+                        <label for="naam" class="block font-medium text-[#00C8C8]">
+                            Naam <span class="text-[#FF4655]" aria-hidden="true">*</span>
+                        </label>
+                        <input type="text" id="naam" name="naam" autocomplete="name" required aria-describedby="naam-hulp"
+                            class="peer mt-1 w-full rounded-lg border border-gray-400 bg-[#0A1428] px-3 py-2 text-white user-invalid:border-red-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">
+                        <p id="naam-hulp" class="mt-1 text-sm text-gray-400">
+                            Vul je voor- en achternaam in.
+                        </p>
+                        <p class="mt-1 hidden text-sm font-semibold text-red-400 peer-user-invalid:block">
+                            Dit veld is verplicht. Vul je naam in.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block font-medium text-[#00C8C8]">
+                            E-mail <span class="text-[#FF4655]" aria-hidden="true">*</span>
+                        </label>
+                        <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-hulp"
+                            class="peer mt-1 w-full rounded-lg border border-gray-400 bg-[#0A1428] px-3 py-2 text-white user-invalid:border-red-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">
+                        <p id="email-hulp" class="mt-1 text-sm text-gray-400">
+                            Bijvoorbeeld naam@voorbeeld.be.
+                        </p>
+                        <p class="mt-1 hidden text-sm font-semibold text-red-400 peer-user-invalid:block">
+                            Dit e-mailadres klopt niet. Vul het in zoals naam@voorbeeld.be.
+                        </p>
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <label for="onderwerp" class="block font-medium text-[#00C8C8]">Onderwerp</label>
+                        <select id="onderwerp" name="onderwerp"
+                            class="mt-1 w-full rounded-lg border border-gray-400 bg-[#0A1428] px-3 py-2 text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">
+                            <option value="">Maak een keuze</option>
+                            <option value="stage">Stage</option>
+                            <option value="project">Project of ontwerp</option>
+                            <option value="vraag">Andere vraag</option>
+                        </select>
+                    </div>
+                    
+                    <div class="md:col-span-2">
+                        <label for="bericht" class="block font-medium text-[#00C8C8]">
+                            Bericht <span class="text-[#FF4655]" aria-hidden="true">*</span>
+                        </label>
+                        <textarea id="bericht" name="bericht" rows="5" required minlength="10" aria-describedby="bericht-hulp"
+                            class="peer mt-1 w-full rounded-lg border border-gray-400 bg-[#0A1428] px-3 py-2 text-white user-invalid:border-red-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]"></textarea>
+                        <p id="bericht-hulp" class="mt-1 text-sm text-gray-400">
+                            Schrijf minstens tien tekens over je vraag of idee.
+                        </p>
+                        <p class="mt-1 hidden text-sm font-semibold text-red-400 peer-user-invalid:block">
+                            Je bericht is te kort. Schrijf minstens tien tekens.
+                        </p>
+                    </div>
+
+                    <div class="md:col-span-2 flex items-center gap-2">
+                        <input type="checkbox" id="akkoord" name="akkoord" value="ja" required
+                            class="size-5 accent-[#FF4655] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">
+                        <label for="akkoord" class="text-gray-300">
+                            Ik ga akkoord dat Jeffrey mijn bericht leest <span class="text-[#FF4655]" aria-hidden="true">*</span>
+                        </label>
+                    </div>
+                    
+                    <div class="md:col-span-2">
+                        <button type="submit" class="inline-flex items-center justify-center gap-2 bg-[#FF4655] hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            Verstuur
+                        </button>
+                        <p class="mt-3 text-sm text-gray-400">
+                            Ik gebruik je ingevulde gegevens enkel om op je bericht te antwoorden.
+                        </p>
+                    </div>
+                </form>
+            </main>
+
+            <aside class="bg-gray-800/40 p-8 border border-gray-700 rounded-lg h-fit">
+                <h2 class="font-bold text-xl mb-6 text-[#00C8C8] uppercase tracking-wider">Contactgegevens</h2>
+                
+                <ul class="flex flex-col gap-4 text-gray-300">
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-[#FF4655]" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <a href="mailto:jeffrey.kissi@student.ap.be" class="rounded-sm hover:text-[#00C8C8] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00C8C8]">jeffrey.kissi@student.ap.be</a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-[#FF4655]" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <div>Antwoord binnen 2 werkdagen</div>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-[#FF4655]" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div>Antwerpen, BE</div>
+                    </li>
+                </ul>
+            </aside>
+            
+        </div>
+
+        <footer class="border-t border-[#00C8C8]/30 py-6 text-center text-sm text-gray-500">
+            <p>&copy; 2026 Jeffrey Kissi | jeffrey.kissi@student.ap.be</p>
+        </footer>
+
+    </div>
+</body>
+</html>
